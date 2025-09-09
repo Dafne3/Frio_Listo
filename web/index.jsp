@@ -11,10 +11,13 @@
 </head>
 <body>
   <header>
-    <h1><img src="images/friolisto.png" alt="FrioListo Logo"> FrioListo</h1>
+    <h1><img src="images/friolisto.png" alt="FrioListo Logo"> FrioListo </h1>
     <nav>
       <ul>
         <li><a href="index.jsp">Inicio</a></li>
+        <li><a href="nosotros.jsp">Sobre nosotros</a></li>
+        <li><a href="servicios.jsp">Productos y Servicios</a></li>
+        <li><a href="contacto.jsp">Contacto</a></li>
         <li><a href="login.jsp">Iniciar sesión</a></li>
       </ul>
     </nav>
@@ -60,6 +63,7 @@
         <p>"Excelente atención al cliente, rapidez y variedad. ¡100% recomendado!"</p>
         <strong>- Lucía M.</strong>
       </div>
+      <a href="servicios.jsp" class="comprar-btn">Comprar Ahora</a>
     </section>
   </main>
 
@@ -68,4 +72,5 @@
   </footer>
 </body>
 </html>
+
 
