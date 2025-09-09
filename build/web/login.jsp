@@ -15,6 +15,9 @@
     <nav>
       <ul>
         <li><a href="index.jsp">Inicio</a></li>
+        <li><a href="nosotros.jsp">Sobre nosotros</a></li>
+        <li><a href="servicios.jsp">Productos y Servicios</a></li>
+        <li><a href="contacto.jsp">Contacto</a></li>
         <li><a href="login.jsp">Iniciar sesión</a></li>
       </ul>
     </nav>
