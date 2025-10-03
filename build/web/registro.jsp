@@ -30,19 +30,6 @@
             <h3 class="fw-bold" style="color:#005f73;">Crea tu cuenta</h3>
             <p class="text-muted mb-0">Completa los datos para registrarte en FrioListo</p>
           </div>
-<body>
-  <header>
-    <h1><img src="images/friolisto.png" alt="FrioListo Logo"> FrioListo</h1>
-    <nav>
-      <ul>
-        <li><a href="index.jsp">Inicio</a></li>
-        <li><a href="nosotros.jsp">Sobre nosotros</a></li>
-        <li><a href="servicios.jsp">Productos y Servicios</a></li>
-        <li><a href="contacto.jsp">Contacto</a></li>
-        <li><a href="login.jsp">Iniciar sesión</a></li>
-      </ul>
-    </nav>
-  </header>
 
           <!-- Formulario -->
           <form action="procesarRegistro.jsp" method="post">

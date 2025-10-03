@@ -17,19 +17,6 @@
   </style>
 </head>
 <body style="background-color:#f8fbfd;">
-<body>
-  <header>
-    <h1><img src="images/friolisto.png" alt="FrioListo Logo"> FrioListo </h1>
-    <nav>
-      <ul>
-        <li><a href="index.jsp">Inicio</a></li>
-        <li><a href="nosotros.jsp">Sobre nosotros</a></li>
-        <li><a href="servicios.jsp">Productos y Servicios</a></li>
-        <li><a href="contacto.jsp">Contacto</a></li>
-        <li><a href="login.jsp">Iniciar sesión</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <!-- Contenedor responsive -->
   <div class="container min-vh-100 d-flex justify-content-center align-items-center">
@@ -98,3 +85,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

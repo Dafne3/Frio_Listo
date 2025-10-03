@@ -24,27 +24,6 @@
           <li><a href="productos.jsp" class="nav-link px-2 fw-bold" style="color:#0bbca5;">Productos y servicios</a></li>
           <li><a href="contacto.jsp" class="nav-link px-2 fw-bold" style="color:#0bbca5;">Contacto</a></li>
         </ul>  
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FrioListo - Delivery de Bebidas</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
-</head>
-<body>
-  <header>
-    <h1><img src="images/friolisto.png" alt="FrioListo Logo"> FrioListo </h1>
-    <nav>
-      <ul>
-        <li><a href="index.jsp">Inicio</a></li>
-        <li><a href="nosotros.jsp">Sobre nosotros</a></li>
-        <li><a href="servicios.jsp">Productos y Servicios</a></li>
-        <li><a href="contacto.jsp">Contacto</a></li>
-        <li><a href="login.jsp">Iniciar sesi√≥n</a></li>
-      </ul>
-    </nav>
-  </header>
 
         <!-- Botones -->
         <div class="col-md-3 text-end">
@@ -137,7 +116,6 @@
           °No dejes que el hielo se derrita sin nosotros!
         </p>
       </div>
-      <a href="servicios.jsp" class="comprar-btn">Comprar Ahora</a>
     </section>
 
     <!-- Testimonios -->
@@ -186,6 +164,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-
-
