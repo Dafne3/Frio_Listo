@@ -504,6 +504,13 @@
   </div>
 </div>
 
+<!-- Botón Ver más productos -->
+<div class="mt-5 d-flex justify-content-center">
+  <a href="login.jsp" class="btn btn-main btn-lg fw-bold" 
+     style="font-family: 'Arial', sans-serif; color: white;">
+    Ver más productos
+  </a>
+</div>
 
 <!-- 🛒 Carrito flotante -->
 <div id="cartSidebar" class="cart-sidebar">
@@ -629,15 +636,6 @@
     }
   }
 </script>
-
-
-
-
-
-
-
-
-  
 
   <!-- Footer -->
   <footer class="text-center py-4 mt-4" style="background-color:#005f73; color:white;">
