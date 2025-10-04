@@ -1,4 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="javax.servlet.http.*" %>
+<%
+    String nombreSesion = (String) session.getAttribute("nombreUsuario");
+    String apellidoSesion = (String) session.getAttribute("apellidoUsuario");
+%>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -62,9 +67,16 @@
       </ul>  
 
       <div class="col-md-3 text-end">
-          <a href="login.jsp" class="btn me-2" style="background-color:#22a593; color:white; border:none;">Ingresar</a>
-          <a href="registro.jsp" class="btn" style="background-color:#22a593; color:white; border:none;">Registrarse</a>
-      </div>
+            <% if (nombreSesion != null) { %>
+                <span class="text-white fw-bold me-3">
+                    Hola, <%= nombreSesion %> <%= apellidoSesion %>
+                </span>
+                <a href="logout.jsp" class="btn btn-danger">Salir</a>
+            <% } else { %>
+                <a href="login.jsp" class="btn me-2" style="background-color:#22a593; color:white; border:none;">Ingresar</a>
+                <a href="registro.jsp" class="btn" style="background-color:#22a593; color:white; border:none;">Registrarse</a>
+            <% } %>
+        </div>
   </header>
 
 <!-- Sección Productos -->
@@ -636,6 +648,15 @@
     }
   }
 </script>
+
+
+
+
+
+
+
+
+  
 
   <!-- Footer -->
   <footer class="text-center py-4 mt-4" style="background-color:#005f73; color:white;">

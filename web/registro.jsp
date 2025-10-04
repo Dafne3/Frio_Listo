@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Registro - FrioListo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
@@ -18,12 +18,57 @@
 </head>
 <body style="background-color:#f8fbfd;">
 
+  <!-- ALERTA FLOTANTE (error registro) -->
+  <% if (request.getAttribute("errorRegistro") != null) { %>
+  <div id="alertaError" 
+       class="position-fixed top-0 end-0 m-3 alert alert-danger d-flex align-items-center shadow" 
+       style="z-index:9999; border-radius:12px; min-width:280px;">
+       
+    <!-- Icono de error -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" 
+         class="bi bi-x-circle-fill me-2 text-danger" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.646 4.646a.5.5 
+               0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 
+               0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 
+               0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 
+               0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 
+               0 0 1 0-.708z"/>
+    </svg>
+
+    <!-- Texto -->
+    <div>
+      <%= request.getAttribute("errorRegistro") %>
+    </div>
+  </div>
+
+  <script>
+    // Animación de entrada
+    const alertaErr = document.getElementById("alertaError");
+    alertaErr.style.opacity = 0;
+    alertaErr.style.transform = "translateX(100px)";
+    setTimeout(() => {
+      alertaErr.style.transition = "all 0.5s ease";
+      alertaErr.style.opacity = 1;
+      alertaErr.style.transform = "translateX(0)";
+    }, 100);
+
+    // Desaparece solo
+    setTimeout(() => {
+      alertaErr.style.transition = "all 0.5s ease";
+      alertaErr.style.opacity = 0;
+      alertaErr.style.transform = "translateX(100px)";
+      setTimeout(() => alertaErr.remove(), 500);
+    }, 4000);
+  </script>
+  <% } %>
+
+
+  <!-- CONTENEDOR DEL FORM -->
   <div class="container d-flex justify-content-center align-items-center py-5">
     <div class="row justify-content-center w-100">
       <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5">
-        <!-- Card con margen superior e inferior -->
         <div class="card shadow-lg p-4 rounded-4 my-5">
-          
+
           <!-- Logo + título -->
           <div class="text-center mb-3">
             <img src="images/friolisto.png" alt="FrioListo" width="70" height="70" class="mb-2">
