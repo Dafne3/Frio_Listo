@@ -119,7 +119,7 @@
           </div>
 
           <!-- Formulario login -->
-          <form action="procesarLogin.jsp" method="post">
+          <form action="LoginServlet" method="post">
             <div class="mb-3">
               <label for="correo" class="form-label fw-bold">Correo electrónico</label>
               <input type="email" class="form-control" id="correo" name="correo" placeholder="Ej: admin@mail.com" required>

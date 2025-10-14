@@ -77,7 +77,7 @@
           </div>
 
           <!-- Formulario -->
-          <form action="procesarRegistro.jsp" method="post">
+          <form action="RegistroServlet" method="post">
             <!-- Nombres -->
             <div class="mb-3">
               <label for="nombres" class="form-label fw-bold">Nombres</label>
