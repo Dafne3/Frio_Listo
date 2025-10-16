@@ -1,6 +1,6 @@
 package controlador;
+
 import modelo.Conexion;
-import modelo.Cliente;
 import java.io.IOException;
 import java.sql.*;
 import javax.servlet.ServletException;
@@ -9,21 +9,30 @@ import javax.servlet.http.*;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
-    protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
+
         String correo = request.getParameter("correo");
-        String password = request.getParameter("password");
+        String pass = request.getParameter("clave"); // coincide con name del input
+
         try (Connection con = Conexion.getConnection()) {
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM Cliente WHERE correo=? AND password=?");
-            ps.setString(1, correo);
-            ps.setString(2, password);
-            ResultSet rs = ps.executeQuery();
-            if (rs.next()) {
-                Cliente c = new Cliente(rs.getInt("id_cliente"), rs.getString("nombre"), correo, password);
-                request.getSession().setAttribute("cliente", c);
-                response.sendRedirect(request.getContextPath() + "/cliente-panel.jsp");
-            } else {
-                request.setAttribute("error", "Usuario o contraseña incorrectos");
-                request.getRequestDispatcher("/login.jsp").forward(request, response);
+            String sql = "SELECT * FROM usuarios WHERE correo=? AND pass=?";
+            try (PreparedStatement ps = con.prepareStatement(sql)) {
+                ps.setString(1, correo);
+                ps.setString(2, pass);
+
+                ResultSet rs = ps.executeQuery();
+                if (rs.next()) {
+                    HttpSession session = request.getSession();
+                    session.setAttribute("idUsuario", rs.getInt("idUsuario"));
+                    session.setAttribute("nombre", rs.getString("nombre"));
+                    session.setAttribute("correo", rs.getString("correo"));
+
+                    response.sendRedirect(request.getContextPath() + "/cliente-panel.jsp");
+                } else {
+                    request.setAttribute("errorLogin", "Usuario o contraseña incorrectos");
+                    request.getRequestDispatcher("/login.jsp").forward(request, response);
+                }
             }
         } catch (SQLException e) {
             throw new ServletException("Error en base de datos", e);

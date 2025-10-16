@@ -4,6 +4,5 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    <display-name>Mi Proyecto JSP</display-name>
+    <display-name>Frio_Listo_MVC</display-name>
 </web-app>
-
