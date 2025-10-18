@@ -1,9 +1,5 @@
-<%@ page import="javax.servlet.http.*" %>
-<%
-    String nombreSesion = (String) session.getAttribute("nombreUsuario");
-    String apellidoSesion = (String) session.getAttribute("apellidoUsuario");
-%>
-
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <!-- esto importa jstl core -->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -24,7 +20,7 @@
             <span class="fs-2 fw-bold ms-3">FrioListo</span>
         </a>
         
-        <!-- Menú -->
+        <!-- MenÃº -->
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li><a href="index.jsp" class="nav-link px-2 fw-bold" style="color:#0bbca5;">Inicio</a></li>
           <li><a href="sobre.jsp" class="nav-link px-2 fw-bold" style="color:#0bbca5;">Sobre nosotros</a></li>
@@ -34,15 +30,16 @@
 
         <!-- Botones -->
         <div class="col-md-3 text-end">
-            <% if (nombreSesion != null) { %>
+            <c:if test="${not empty sessionScope.nombreUsuario}"> <!-- esto reemplaza el if de sesion -->
                 <span class="text-white fw-bold me-3">
-                    Hola, <%= nombreSesion %> <%= apellidoSesion %>
+                    Hola, <c:out value="${sessionScope.nombreUsuario}"/> <c:out value="${sessionScope.apellidoUsuario}"/> <!-- esto reemplaza los out.print -->
                 </span>
                 <a href="logout.jsp" class="btn btn-danger">Salir</a>
-            <% } else { %>
+            </c:if>
+            <c:if test="${empty sessionScope.nombreUsuario}"> <!-- esto reemplaza el else -->
                 <a href="login.jsp" class="btn me-2" style="background-color:#22a593; color:white; border:none;">Ingresar</a>
                 <a href="registro.jsp" class="btn" style="background-color:#22a593; color:white; border:none;">Registrarse</a>
-            <% } %>
+            </c:if>
         </div>
     </header>
   
@@ -51,17 +48,17 @@
              style="background: url('images/fondo.gif') center/cover no-repeat; min-height: calc(100vh - 75px);">
         <div>
           <h1 class="display-3 fw-bold bg-dark bg-opacity-50 p-3 rounded">
-              ¡Tus bebidas favoritas, frías y al instante!
+              Â¡Tus bebidas favoritas, frÃ­as y al instante!
           </h1>
           
           <p class="lead mt-4 bg-dark bg-opacity-50 p-3 rounded mx-auto" style="max-width:680px;">
               Desde la heladera directa a tu mano, sin esperas, sin excusas.  
-              Con FrioListo, refrescarte es más fácil que abrir la botella.
+              Con FrioListo, refrescarte es mÃ¡s fÃ¡cil que abrir la botella.
           </p>
       
           <div class="mt-4">
               <a href="productos.jsp" class="btn btn-lg" style="background-color:#22a593; color:white; border:none;">Ver productos</a>
-              <a href="contacto.jsp" class="btn btn-outline-light btn-lg ms-2">Contáctanos</a>
+              <a href="contacto.jsp" class="btn btn-outline-light btn-lg ms-2">ContÃ¡ctanos</a>
           </div>
         </div>
     </section>
@@ -77,10 +74,10 @@
                  onmouseover="this.style.transform='translateY(-10px) scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.25)';" 
                  onmouseout="this.style.transform='none'; this.style.boxShadow='none';">
               <div class="card-body">
-                <h3 class="fw-bold">Entrega Rápida</h3>
+                <h3 class="fw-bold">Entrega RÃ¡pida</h3>
                 <p class="mt-3">
                   Llega en menos de 30 minutos, garantizado.  
-                  ¡Para que nunca te falte una bebida fría!
+                  Â¡Para que nunca te falte una bebida frÃ­a!
                 </p>
               </div>
             </div>
@@ -95,8 +92,8 @@
               <div class="card-body">
                 <h3 class="fw-bold">Variedad de Bebidas</h3>
                 <p class="mt-3">
-                  Gaseosas, energizantes, aguas saborizadas y más.  
-                  ¡Todo a un clic de distancia!
+                  Gaseosas, energizantes, aguas saborizadas y mÃ¡s.  
+                  Â¡Todo a un clic de distancia!
                 </p>
               </div>
             </div>
@@ -111,8 +108,8 @@
               <div class="card-body">
                 <h3 class="fw-bold">Pedidos Online</h3>
                 <p class="mt-3">
-                  Fácil, rápido y desde donde estés,  
-                  ¡FrioListo llega a ti sin complicaciones!
+                  FÃ¡cil, rÃ¡pido y desde donde estÃ©s,  
+                  Â¡FrioListo llega a ti sin complicaciones!
                 </p>
               </div>
             </div>
@@ -121,13 +118,13 @@
       </div>
     </section>
 
-    <!-- ¿Porque elegirnos? -->
+    <!-- Â¿Por quÃ© elegirnos? -->
     <section class="py-5 text-center" style="background-color:#e9f7f9;">
       <div class="container">
-        <h2 class="fw-bold mb-4">¿Por qué elegir FrioListo?</h2>
+        <h2 class="fw-bold mb-4">Â¿Por quÃ© elegir FrioListo?</h2>
         <p class="lead mx-auto" style="max-width:750px;">
-          Porque somos más que un delivery. Somos el salvavidas de tus reuniones, el héroe de tus celebraciones y el aliado perfecto para combatir el calor. 
-          ¡No dejes que el hielo se derrita sin nosotros!
+          Porque somos mÃ¡s que un delivery. Somos el salvavidas de tus reuniones, el hÃ©roe de tus celebraciones y el aliado perfecto para combatir el calor. 
+          Â¡No dejes que el hielo se derrita sin nosotros!
         </p>
       </div>
     </section>
@@ -141,7 +138,7 @@
           <!-- Testimonio 1 -->
           <div class="col-md-8 mb-4">
             <div class="p-4 rounded-4" style="border:1px solid #22a593;">
-              <p class="mb-2">"Increíble servicio, llegó más rápido de lo que esperaba y las bebidas estaban heladas. ¡FrioListo salvó mi fiesta!"</p>
+              <p class="mb-2">"IncreÃ­ble servicio, llegÃ³ mÃ¡s rÃ¡pido de lo que esperaba y las bebidas estaban heladas. Â¡FrioListo salvÃ³ mi fiesta!"</p>
               <p class="fw-bold mb-0">- Mariana R.</p>
             </div>
           </div>
@@ -149,7 +146,7 @@
           <!-- Testimonio 2 -->
           <div class="col-md-8 mb-4">
             <div class="p-4 rounded-4" style="border:1px solid #22a593;">
-              <p class="mb-2">"Muy fácil de usar y el catálogo es super amplio. ¡Pido todas las semanas!"</p>
+              <p class="mb-2">"Muy fÃ¡cil de usar y el catÃ¡logo es super amplio. Â¡Pido todas las semanas!"</p>
               <p class="fw-bold mb-0">- Jorge T.</p>
             </div>
           </div>
@@ -157,13 +154,13 @@
           <!-- Testimonio 3 -->
           <div class="col-md-8 mb-4">
             <div class="p-4 rounded-4" style="border:1px solid #22a593;">
-              <p class="mb-2">"Excelente atención al cliente, rapidez y variedad. ¡100% recomendado!"</p>
-              <p class="fw-bold mb-0">- Lucía M.</p>
+              <p class="mb-2">"Excelente atenciÃ³n al cliente, rapidez y variedad. Â¡100% recomendado!"</p>
+              <p class="fw-bold mb-0">- LucÃ­a M.</p>
             </div>
           </div>
         </div>
 
-        <!-- Botón final -->
+        <!-- BotÃ³n final -->
         <div class="mt-4">
           <a href="productos.jsp" class="btn btn-lg" style="background-color:#22a593; color:white; border:none;">Explorar bebidas</a>
         </div>
@@ -172,7 +169,7 @@
 
     <!-- Footer -->
     <footer class="text-center py-4" style="background-color:#005f73; color:white;">
-      <p>© 2025 FrioListo. Todos los derechos reservados.</p>
+      <p>Â® 2025 FrioListo. Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
