@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> <!-- se agrega jstl core para manejo condicional -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,49 +20,49 @@
 <body style="background-color:#f8fbfd;">
 
   <!-- ALERTA FLOTANTE (error registro) -->
-  <% if (request.getAttribute("errorRegistro") != null) { %>
-  <div id="alertaError" 
-       class="position-fixed top-0 end-0 m-3 alert alert-danger d-flex align-items-center shadow" 
-       style="z-index:9999; border-radius:12px; min-width:280px;">
-       
-    <!-- Icono de error -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" 
-         class="bi bi-x-circle-fill me-2 text-danger" viewBox="0 0 16 16">
-      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.646 4.646a.5.5 
-               0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 
-               0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 
-               0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 
-               0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 
-               0 0 1 0-.708z"/>
-    </svg>
+  <!-- usando jstl para verificar si existe el error -->
+  <c:if test="${not empty errorRegistro}">
+    <div id="alertaError" 
+         class="position-fixed top-0 end-0 m-3 alert alert-danger d-flex align-items-center shadow" 
+         style="z-index:9999; border-radius:12px; min-width:280px;">
+         
+      <!-- Icono de error -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" 
+           class="bi bi-x-circle-fill me-2 text-danger" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.646 4.646a.5.5 
+                 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 
+                 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 
+                 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 
+                 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 
+                 0 0 1 0-.708z"/>
+      </svg>
 
-    <!-- Texto -->
-    <div>
-      <%= request.getAttribute("errorRegistro") %>
+      <!-- Texto -->
+      <div>
+        ${errorRegistro}
+      </div>
     </div>
-  </div>
 
-  <script>
-    // Animación de entrada
-    const alertaErr = document.getElementById("alertaError");
-    alertaErr.style.opacity = 0;
-    alertaErr.style.transform = "translateX(100px)";
-    setTimeout(() => {
-      alertaErr.style.transition = "all 0.5s ease";
-      alertaErr.style.opacity = 1;
-      alertaErr.style.transform = "translateX(0)";
-    }, 100);
-
-    // Desaparece solo
-    setTimeout(() => {
-      alertaErr.style.transition = "all 0.5s ease";
+    <script>
+      // animación flotante para el error
+      const alertaErr = document.getElementById("alertaError");
       alertaErr.style.opacity = 0;
       alertaErr.style.transform = "translateX(100px)";
-      setTimeout(() => alertaErr.remove(), 500);
-    }, 4000);
-  </script>
-  <% } %>
+      setTimeout(() => {
+        alertaErr.style.transition = "all 0.5s ease";
+        alertaErr.style.opacity = 1;
+        alertaErr.style.transform = "translateX(0)";
+      }, 100);
 
+      // desaparece solo
+      setTimeout(() => {
+        alertaErr.style.transition = "all 0.5s ease";
+        alertaErr.style.opacity = 0;
+        alertaErr.style.transform = "translateX(100px)";
+        setTimeout(() => alertaErr.remove(), 500);
+      }, 4000);
+    </script>
+  </c:if>
 
   <!-- CONTENEDOR DEL FORM -->
   <div class="container d-flex justify-content-center align-items-center py-5">
