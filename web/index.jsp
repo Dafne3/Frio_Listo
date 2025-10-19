@@ -58,13 +58,10 @@
           </p>
       
           <div class="mt-4">
-<<<<<<< HEAD
-              <a href="productos.jsp" class="btn btn-lg" style="background-color:#22a593; color:white; border:none;">Ver productos</a>
-              <a href="contacto.jsp" class="btn btn-outline-light btn-lg ms-2">Contáctanos</a>
-=======
+
               <a href="ProductoServlet?action=listar" class="btn btn-lg" style="background-color:#22a593; color:white; border:none;">Ver productos</a>
-              <a href="contacto.jsp" class="btn btn-outline-light btn-lg ms-2">Cont�ctanos</a>
->>>>>>> 5240195 (Agregado detalleProducto.jsp y carrito.jsp con integración al servlet)
+              <a href="contacto.jsp" class="btn btn-outline-light btn-lg ms-2">Contactanos</a>
+
           </div>
         </div>
     </section>

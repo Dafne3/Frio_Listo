@@ -4,5 +4,5 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    <display-name>Frio_Listo_MVC</display-name>
+    <display-name>AVA_P_01</display-name>
 </web-app>
