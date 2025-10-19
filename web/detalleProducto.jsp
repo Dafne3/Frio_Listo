@@ -62,7 +62,7 @@
             <h4 class="fw-bold text-success mb-4">S/. <%= producto.getPrecioUnitario() %></h4>
 
             <form id="formAgregar" method="post" action="CarritoServlet">
-                <input type="hidden" name="id" value="<%= producto.getIdProducto() %>">
+                <input type="hidden" name="idProducto" value="<%= producto.getIdProducto() %>">
                 <input type="hidden" name="action" value="agregar">
                 <button type="submit" class="btn btn-main me-2">Agregar al carrito</button>
                 <a href="ProductoServlet?action=listar" class="btn btn-secondary">Seguir comprando</a>

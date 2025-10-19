@@ -56,15 +56,72 @@
     <title>Carrito de Compras - FrioListo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8fbfd; font-family: "Poppins", sans-serif; padding-top: 90px; }
-        header { background-color: #005f73; }
-        .btn-main { background-color: #22a593; color: white; border: none; font-weight: bold; }
-        .btn-main:hover { background-color: #1d8b7a; }
-        .resumen-box { background: #e8f5f3; border-radius: 15px; padding: 20px; }
-        .resumen-box h5 { color: #005f73; font-weight: bold; }
-        footer { background-color: #005f73; color: white; text-align: center; padding: 15px 0; margin-top: 60px; }
-        .seguir-comprando { color: #005f73; font-weight: 600; text-decoration: none; border: 2px solid #005f73; border-radius: 10px; padding: 8px 20px; }
-        .seguir-comprando:hover { background-color: #005f73; color: white; text-decoration: none; }
+        /* --- ESTRUCTURA GENERAL --- */
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: #f8fbfd;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 90px;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        header {
+            background-color: #005f73;
+        }
+
+        /* --- BOTONES Y ESTILOS --- */
+        .btn-main {
+            background-color: #22a593;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+        .btn-main:hover {
+            background-color: #1d8b7a;
+        }
+
+        .resumen-box {
+            background: #e8f5f3;
+            border-radius: 15px;
+            padding: 20px;
+        }
+        .resumen-box h5 {
+            color: #005f73;
+            font-weight: bold;
+        }
+
+        .seguir-comprando {
+            color: #005f73;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid #005f73;
+            border-radius: 10px;
+            padding: 8px 20px;
+        }
+        .seguir-comprando:hover {
+            background-color: #005f73;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* --- FOOTER PEGADO ABAJO --- */
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: auto; /* Empuja el footer al fondo */
+        }
     </style>
 </head>
 <body>
@@ -77,7 +134,7 @@
     <a href="ProductoServlet?action=listar" class="btn btn-light">Seguir comprando</a>
 </header>
 
-<section class="container mt-4">
+<main class="container mt-4">
     <h3 class="fw-bold text-center mb-4" style="color:#005f73;">Tu carrito de compras</h3>
 
     <% if (carrito == null || carrito.isEmpty()) { %>
@@ -142,10 +199,11 @@
             </div>
         </div>
     <% } %>
-</section>
+</main>
 
 <footer>
     <p>© 2025 FrioListo. Todos los derechos reservados.</p>
 </footer>
+
 </body>
 </html>
