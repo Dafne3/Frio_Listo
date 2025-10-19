@@ -1,0 +1,18 @@
+<project name="AVA_P_01-local" basedir="." default="run">
+    <property name="tomcat.home" value="E:/tomcat/apache-tomcat-9.0.109"/>
+    <property name="tomcat.username" value="admi"/>
+    <property name="tomcat.password" value="admi"/>
+    
+    <path id="tomcat.ant.classpath">
+        <pathelement location="E:/tomcat/apache-tomcat-9.0.109/lib/catalina-ant.jar"/>
+        <pathelement location="E:/tomcat/apache-tomcat-9.0.109/lib/catalina.jar"/>
+        <pathelement location="E:/tomcat/apache-tomcat-9.0.109/lib/servlet-api.jar"/>
+        <pathelement location="E:/tomcat/apache-tomcat-9.0.109/lib/tomcat-coyote.jar"/>
+    </path>
+
+    <taskdef name="deploy"
+             classname="org.apache.catalina.ant.DeployTask"
+             classpathref="tomcat.ant.classpath"/>
+
+    <import file="nbproject/build-impl.xml"/>
+</project>
