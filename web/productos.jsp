@@ -274,7 +274,7 @@
       </div>
     </div>
   </div>
-</div>
+</div>  
 
 <!-- Modal 3 -->
 <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
