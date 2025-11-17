@@ -93,7 +93,8 @@
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Coca-Cola 500ml</h5>
             <p class="fw-bold text-dark">S/. 5.00</p>
-            <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal1">Ver más</button>
+            <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 1) -->
+<a href="PedidoServlet?accion=seleccionar&id=1" class="btn btn-main w-100">Seleccionar</a>
           </div>
           
         </div>
@@ -105,7 +106,8 @@
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Inca Kola 500ml</h5>
             <p class="fw-bold text-dark">S/. 4.50</p>
-            <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal2">Ver más</button>
+            <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 2) -->
+<a href="PedidoServlet?accion=seleccionar&id=2" class="btn btn-main w-100">Seleccionar</a>
           </div>
         </div>
       </div>
@@ -116,7 +118,8 @@
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Agua 600ml</h5>
             <p class="fw-bold text-dark">S/. 3.00</p>
-            <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal3">Ver más</button>
+            <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 3) -->
+<a href="PedidoServlet?accion=seleccionar&id=3" class="btn btn-main w-100">Seleccionar</a>
           </div>
         </div>
       </div>
@@ -127,7 +130,8 @@
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Red Bull 250ml</h5>
             <p class="fw-bold text-dark">S/. 8.00</p>
-            <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal4">Ver más</button>
+            <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 4) -->
+<a href="PedidoServlet?accion=seleccionar&id=4" class="btn btn-main w-100">Seleccionar</a>
           </div>
         </div>
       </div>
@@ -138,7 +142,8 @@
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Sprite 500ml</h5>
             <p class="fw-bold text-dark">S/. 4.80</p>
-            <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal5">Ver más</button>
+            <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 5) -->
+<a href="PedidoServlet?accion=seleccionar&id=5" class="btn btn-main w-100">Seleccionar</a>
           </div>
         </div>
       </div>
@@ -149,7 +154,8 @@
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Fanta 500ml</h5>
             <p class="fw-bold text-dark">S/. 4.50</p>
-            <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal6">Ver más</button>
+            <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 6) -->
+<a href="PedidoServlet?accion=seleccionar&id=6" class="btn btn-main w-100">Seleccionar</a>
           </div>
         </div>
       </div>
@@ -160,7 +166,8 @@
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">Pepsi 500ml</h5>
           <p class="fw-bold text-dark">S/. 4.70</p>
-          <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal7">Ver más</button>
+          <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 7) -->
+<a href="PedidoServlet?accion=seleccionar&id=7" class="btn btn-main w-100">Seleccionar</a>
         </div>
       </div>
     </div>
@@ -172,7 +179,8 @@
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">Guaraná 500ml</h5>
           <p class="fw-bold text-dark">S/. 4.20</p>
-          <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal8">Ver más</button>
+          <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 8) -->
+<a href="PedidoServlet?accion=seleccionar&id=8" class="btn btn-main w-100">Seleccionar</a>
         </div>
       </div>
     </div>
@@ -184,7 +192,8 @@
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">7Up 500ml</h5>
           <p class="fw-bold text-dark">S/. 4.50</p>
-          <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal9">Ver más</button>
+          <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 9) -->
+<a href="PedidoServlet?accion=seleccionar&id=9" class="btn btn-main w-100">Seleccionar</a>
         </div>
       </div>
     </div>
@@ -196,7 +205,8 @@
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">Gatorade 500ml</h5>
           <p class="fw-bold text-dark">S/. 6.50</p>
-          <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal10">Ver más</button>
+          <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 10) -->
+<a href="PedidoServlet?accion=seleccionar&id=10" class="btn btn-main w-100">Seleccionar</a>
         </div>
       </div>
     </div>
@@ -208,7 +218,8 @@
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">Powerade 500ml</h5>
           <p class="fw-bold text-dark">S/. 6.00</p>
-          <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal11">Ver más</button>
+          <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 11) -->
+<a href="PedidoServlet?accion=seleccionar&id=11" class="btn btn-main w-100">Seleccionar</a>
         </div>
       </div>
     </div>
@@ -220,7 +231,8 @@
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">Té Helado 500ml</h5>
           <p class="fw-bold text-dark">S/. 4.00</p>
-          <button class="btn btn-main w-100" data-bs-toggle="modal" data-bs-target="#modal12">Ver más</button>
+          <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 12) -->
+<a href="PedidoServlet?accion=seleccionar&id=12" class="btn btn-main w-100">Seleccionar</a>
         </div>
       </div>
     </div>
@@ -648,15 +660,6 @@
     }
   }
 </script>
-
-
-
-
-
-
-
-
-  
 
   <!-- Footer -->
   <footer class="text-center py-4 mt-4" style="background-color:#005f73; color:white;">
