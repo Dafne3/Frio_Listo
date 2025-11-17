@@ -94,7 +94,7 @@
           <img src="images/prod1.jpg" class="card-img-top" alt="Coca-Cola">
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Coca-Cola 500ml</h5>
-            <p class="fw-bold text-dark">S/. 5.00</p>
+            <p class="fw-bold text-dark">S/. 2.80</p>
             <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 1) -->
 <a href="PedidoServlet?accion=seleccionar&id=1" class="btn btn-main w-100">Seleccionar</a>
           </div>          
@@ -108,7 +108,7 @@
           <img src="images/prod2.jpg" class="card-img-top" alt="Inca Kola">
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Inca Kola 500ml</h5>
-            <p class="fw-bold text-dark">S/. 4.50</p>
+            <p class="fw-bold text-dark">S/. 2.80</p>
             <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 2) -->
 <a href="PedidoServlet?accion=seleccionar&id=2" class="btn btn-main w-100">Seleccionar</a>
           </div>
@@ -122,7 +122,7 @@
           <img src="images/prod3.jpg" class="card-img-top" alt="Agua Cielo">
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Agua 600ml</h5>
-            <p class="fw-bold text-dark">S/. 3.00</p>
+            <p class="fw-bold text-dark">S/. 1.60</p>
             <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 3) -->
 <a href="PedidoServlet?accion=seleccionar&id=3" class="btn btn-main w-100">Seleccionar</a>
           </div>
@@ -136,7 +136,7 @@
           <img src="images/prod4.jpg" class="card-img-top" alt="Red Bull">
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Red Bull 250ml</h5>
-            <p class="fw-bold text-dark">S/. 8.00</p>
+            <p class="fw-bold text-dark">S/. 6.50</p>
             <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 4) -->
 <a href="PedidoServlet?accion=seleccionar&id=4" class="btn btn-main w-100">Seleccionar</a>
           </div>
@@ -150,7 +150,7 @@
           <img src="images/prod5.jpg" class="card-img-top" alt="Sprite">
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Sprite 500ml</h5>
-            <p class="fw-bold text-dark">S/. 4.80</p>
+            <p class="fw-bold text-dark">S/. 2.50</p>
             <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 5) -->
 <a href="PedidoServlet?accion=seleccionar&id=5" class="btn btn-main w-100">Seleccionar</a>
           </div>
@@ -164,7 +164,7 @@
           <img src="images/prod6.jpg" class="card-img-top" alt="Fanta">
           <div class="card-body">
             <h5 class="fw-bold" style="color:#22a593;">Fanta 500ml</h5>
-            <p class="fw-bold text-dark">S/. 4.50</p>
+            <p class="fw-bold text-dark">S/. 2.50</p>
             <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 6) -->
 <a href="PedidoServlet?accion=seleccionar&id=6" class="btn btn-main w-100">Seleccionar</a>
           </div>
@@ -178,7 +178,7 @@
         <img src="images/prod7.jpg" class="card-img-top" alt="Pepsi">
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">Pepsi 500ml</h5>
-          <p class="fw-bold text-dark">S/. 4.70</p>
+          <p class="fw-bold text-dark">S/. 2.20</p>
           <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 7) -->
 <a href="PedidoServlet?accion=seleccionar&id=7" class="btn btn-main w-100">Seleccionar</a>
         </div>
@@ -191,7 +191,7 @@
         <img src="images/prod8.jpg" class="card-img-top" alt="Guaraná">
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">Guaraná 500ml</h5>
-          <p class="fw-bold text-dark">S/. 4.20</p>
+          <p class="fw-bold text-dark">S/. 2.50</p>
           <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 8) -->
 <a href="PedidoServlet?accion=seleccionar&id=8" class="btn btn-main w-100">Seleccionar</a>
         </div>
@@ -205,7 +205,7 @@
         <img src="images/prod9.jpg" class="card-img-top" alt="7Up">
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">7Up 500ml</h5>
-          <p class="fw-bold text-dark">S/. 4.50</p>
+          <p class="fw-bold text-dark">S/. 2.00</p>
           <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 9) -->
 <a href="PedidoServlet?accion=seleccionar&id=9" class="btn btn-main w-100">Seleccionar</a>
         </div>
@@ -218,7 +218,7 @@
         <img src="images/prod10.jpg" class="card-img-top" alt="Gatorade">
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">Gatorade 500ml</h5>
-          <p class="fw-bold text-dark">S/. 6.50</p>
+          <p class="fw-bold text-dark">S/. 2.50</p>
           <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 10) -->
 <a href="PedidoServlet?accion=seleccionar&id=10" class="btn btn-main w-100">Seleccionar</a>
         </div>
@@ -230,8 +230,8 @@
       <div class="card card-product shadow-sm h-100">
         <img src="images/prod11.jpg" class="card-img-top" alt="Powerade">
         <div class="card-body">
-          <h5 class="fw-bold" style="color:#22a593;">Powerade 500ml</h5>
-          <p class="fw-bold text-dark">S/. 6.00</p>
+          <h5 class="fw-bold" style="color:#22a593;">Powerade 600ml</h5>
+          <p class="fw-bold text-dark">S/. 2.30</p>
           <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 11) -->
 <a href="PedidoServlet?accion=seleccionar&id=11" class="btn btn-main w-100">Seleccionar</a>
         </div>
@@ -244,7 +244,7 @@
         <img src="images/prod12.jpg" class="card-img-top" alt="Té Helado">
         <div class="card-body">
           <h5 class="fw-bold" style="color:#22a593;">Té Helado 500ml</h5>
-          <p class="fw-bold text-dark">S/. 4.00</p>
+          <p class="fw-bold text-dark">S/. 2.10</p>
           <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 12) -->
 <a href="PedidoServlet?accion=seleccionar&id=12" class="btn btn-main w-100">Seleccionar</a>
         </div>
@@ -254,6 +254,7 @@
 </section>
 
 <!-- MODALS DE PRODUCTOS -->
+
 <!-- Modal 1 -->
 <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -265,7 +266,7 @@
       <div class="modal-body">
         <img src="images/prod1.jpg" class="img-fluid rounded mb-3" alt="Coca-Cola">
         <p>Refrescante bebida gaseosa original, ideal para acompañar cualquier momento.</p>
-        <p class="fw-bold">Precio: S/. 5.00</p>
+        <p class="fw-bold">Precio: S/. 2.80</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty1" class="form-control" min="1" value="1">
@@ -278,6 +279,7 @@
   </div>
 </div>
 
+
 <!-- Modal 2 -->
 <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -289,7 +291,7 @@
       <div class="modal-body">
         <img src="images/prod2.jpg" class="img-fluid rounded mb-3" alt="Inca Kola">
         <p>La bebida de sabor nacional que acompaña perfectamente todas tus comidas.</p>
-        <p class="fw-bold">Precio: S/. 4.50</p>
+        <p class="fw-bold">Precio: S/. 2.80</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty2" class="form-control" min="1" value="1">
@@ -302,6 +304,7 @@
   </div>
 </div>  
 
+
 <!-- Modal 3 -->
 <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -313,7 +316,7 @@
       <div class="modal-body">
         <img src="images/prod3.jpg" class="img-fluid rounded mb-3" alt="Agua Cielo">
         <p>Agua purificada y ligera, perfecta para mantenerte hidratado durante el día.</p>
-        <p class="fw-bold">Precio: S/. 3.00</p>
+        <p class="fw-bold">Precio: S/. 1.60</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty3" class="form-control" min="1" value="1">
@@ -337,7 +340,7 @@
       <div class="modal-body">
         <img src="images/prod4.jpg" class="img-fluid rounded mb-3" alt="Red Bull">
         <p>Bebida energética que te da alas para rendir al máximo en tus actividades.</p>
-        <p class="fw-bold">Precio: S/. 8.00</p>
+        <p class="fw-bold">Precio: S/. 6.50</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty4" class="form-control" min="1" value="1">
@@ -361,7 +364,7 @@
       <div class="modal-body">
         <img src="images/prod5.jpg" class="img-fluid rounded mb-3" alt="Sprite">
         <p>Bebida gaseosa de limón, refrescante y con un sabor único.</p>
-        <p class="fw-bold">Precio: S/. 4.80</p>
+        <p class="fw-bold">Precio: S/. 2.50</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty5" class="form-control" min="1" value="1">
@@ -385,7 +388,7 @@
       <div class="modal-body">
         <img src="images/prod6.jpg" class="img-fluid rounded mb-3" alt="Fanta">
         <p>Bebida gaseosa de naranja, burbujeante y llena de sabor frutal.</p>
-        <p class="fw-bold">Precio: S/. 4.50</p>
+        <p class="fw-bold">Precio: S/. 2.50</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty6" class="form-control" min="1" value="1">
@@ -409,7 +412,7 @@
       <div class="modal-body">
         <img src="images/prod7.jpg" class="img-fluid rounded mb-3" alt="Pepsi">
         <p>Bebida gaseosa con sabor único, refrescante y con burbujas intensas.</p>
-        <p class="fw-bold">Precio: S/. 4.70</p>
+        <p class="fw-bold">Precio: S/. 2.20</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty7" class="form-control" min="1" value="1">
@@ -433,7 +436,7 @@
       <div class="modal-body">
         <img src="images/prod8.jpg" class="img-fluid rounded mb-3" alt="Guaraná">
         <p>Bebida gaseosa con extracto de guaraná, dulce y con un sabor tropical.</p>
-        <p class="fw-bold">Precio: S/. 4.20</p>
+        <p class="fw-bold">Precio: S/. 2.50</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty8" class="form-control" min="1" value="1">
@@ -457,7 +460,7 @@
       <div class="modal-body">
         <img src="images/prod9.jpg" class="img-fluid rounded mb-3" alt="7Up">
         <p>Refrescante gaseosa de lima-limón, ligera y burbujeante.</p>
-        <p class="fw-bold">Precio: S/. 4.50</p>
+        <p class="fw-bold">Precio: S/. 2.00</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty9" class="form-control" min="1" value="1">
@@ -481,7 +484,7 @@
       <div class="modal-body">
         <img src="images/prod10.jpg" class="img-fluid rounded mb-3" alt="Gatorade">
         <p>Bebida deportiva que repone sales y energiza durante el ejercicio.</p>
-        <p class="fw-bold">Precio: S/. 6.50</p>
+        <p class="fw-bold">Precio: S/. 250</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty10" class="form-control" min="1" value="1">
@@ -499,13 +502,13 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content p-3">
       <div class="modal-header">
-        <h5 class="modal-title">Powerade 500ml</h5>
+        <h5 class="modal-title">Powerade 600ml</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
         <img src="images/prod11.jpg" class="img-fluid rounded mb-3" alt="Powerade">
         <p>Bebida isotónica que te ayuda a recuperar energía tras la actividad física.</p>
-        <p class="fw-bold">Precio: S/. 6.00</p>
+        <p class="fw-bold">Precio: S/. 2.20</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty11" class="form-control" min="1" value="1">
@@ -529,7 +532,7 @@
       <div class="modal-body">
         <img src="images/prod12.jpg" class="img-fluid rounded mb-3" alt="Té Helado">
         <p>Bebida refrescante a base de té frío, ligera y natural.</p>
-        <p class="fw-bold">Precio: S/. 4.00</p>
+        <p class="fw-bold">Precio: S/. 2.10</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Cantidad</span>
           <input type="number" id="qty12" class="form-control" min="1" value="1">
