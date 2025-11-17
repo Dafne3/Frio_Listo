@@ -79,6 +79,8 @@
         </div>
   </header>
 
+        
+        
 <!-- Sección Productos -->
 <section class="py-5 text-center">
   <div class="container">
@@ -95,10 +97,11 @@
             <p class="fw-bold text-dark">S/. 5.00</p>
             <!-- esto reemplaza a lo que hac�a antes (bot�n del modal 1) -->
 <a href="PedidoServlet?accion=seleccionar&id=1" class="btn btn-main w-100">Seleccionar</a>
-          </div>
-          
+          </div>          
         </div>
       </div>
+      
+      
       <!-- Producto 2 -->
       <div class="col-md-2">
         <div class="card card-product shadow-sm h-100">
@@ -111,6 +114,8 @@
           </div>
         </div>
       </div>
+      
+      
       <!-- Producto 3 -->
       <div class="col-md-2">
         <div class="card card-product shadow-sm h-100">
@@ -123,6 +128,8 @@
           </div>
         </div>
       </div>
+      
+      
       <!-- Producto 4 -->
       <div class="col-md-2">
         <div class="card card-product shadow-sm h-100">
@@ -135,6 +142,8 @@
           </div>
         </div>
       </div>
+      
+      
       <!-- Producto 5 -->
       <div class="col-md-2">
         <div class="card card-product shadow-sm h-100">
@@ -147,6 +156,8 @@
           </div>
         </div>
       </div>
+      
+      
       <!-- Producto 6 -->
       <div class="col-md-2">
         <div class="card card-product shadow-sm h-100">
@@ -159,6 +170,8 @@
           </div>
         </div>
       </div>
+      
+      
       <!-- Producto 7 -->
     <div class="col-md-2">
       <div class="card card-product shadow-sm h-100">
@@ -184,6 +197,7 @@
         </div>
       </div>
     </div>
+    
 
     <!-- Producto 9 -->
     <div class="col-md-2">

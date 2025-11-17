@@ -12,8 +12,7 @@ import modelo.Producto;
 @WebServlet("/PedidoServlet")
 public class PedidoServlet extends HttpServlet {
 
-    // --- esto reemplaza a lo que hacía antes ---
-    // Aquí simplemente creo una lista de productos en memoria
+     // Aquí simplemente creo una lista de productos en memoria
     // (luego ya esto se reemplazará por la base de datos)
     private List<Producto> obtenerProductos() {
         List<Producto> lista = new ArrayList<>();
@@ -41,8 +40,7 @@ public class PedidoServlet extends HttpServlet {
         String accion = request.getParameter("accion");
 
         if ("seleccionar".equals(accion)) {
-            // --- esto reemplaza a lo que hacía antes ---
-            // Aquí agarro el id que viene del botón de productos.jsp
+            //  Aquí agarro el id que viene del botón de productos.jsp
             int id = Integer.parseInt(request.getParameter("id"));
 
             // obtengo la lista de productos simulada
