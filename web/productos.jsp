@@ -125,16 +125,9 @@
         <% if (nombreSesion != null) { %>
             <span class="text-white fw-bold me-3">Hola, <%= nombreSesion %> <%= apellidoSesion %></span>
             <a href="logout.jsp" class="btn btn-danger">Salir</a>
-            <a href="CarritoServlet?action=listar" class="btn btn-light ms-2 cart-badge" title="Ver carrito">
-                <i class="fi fi-ts-cart-shopping-fast"></i>
-                <span class="cart-count"><%= totalItems %></span>
-            </a>
         <% } else { %>
             <a href="login.jsp" class="btn me-2 btn-main">Ingresar</a>
-            <a href="CarritoServlet?action=listar" class="btn btn-light ms-2 cart-badge" title="Ver carrito">
-                <i class="fi fi-ts-cart-shopping-fast"></i>
-                <span class="cart-count"><%= totalItems %></span>
-            </a>
+            
         <% } %>
       </div>
   </header>
